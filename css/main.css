@@ -1,0 +1,101 @@
+@import "./reset.css";
+
+/* BACKGROUND */
+html, body {
+  height: 100%;
+}
+
+html {
+  background: linear-gradient(270deg, #e5f0ff, #44619a, #003366);
+  background-size: 600% 600%;
+  -webkit-animation: ani 9s ease infinite;
+  -moz-animation: ani 9s ease infinite;
+  -o-animation: ani 9s ease infinite;
+  animation: ani 9s ease infinite;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    background-position: 0% 51%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 51%
+  }
+}
+
+@-moz-keyframes ani {
+  0% {
+    background-position: 0% 51%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 51%
+  }
+}
+
+@-o-keyframes ani {
+  0% {
+    background-position: 0% 51%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 51%
+  }
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0% 51%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 51%
+  }
+}
+
+/* NAV STUFF */
+nav {
+  border: 1px solid red;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-menu {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+  border: 1px solid red;
+  height: 80%;
+  display: flex;
+}
+
+footer {
+  border: 1px solid red;
+  height: 10%;
+  display: flex;
+}
