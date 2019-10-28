@@ -113,8 +113,16 @@ a:hover {
   text-align: center;
 }
 
+.name {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.title {
+  font-size: 2rem;
+}
+
 .about-content .container {
-  border: 1px solid red;
   display: inline-flex;
   flex-flow: column;
   justify-content: center;
@@ -122,23 +130,111 @@ a:hover {
   width: 75%;
   color: #F4F9FF;
 }
+
 .project-content .container {
-  
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  align-items: flex-end;
+  color: #F4F9FF;
+  width: 90%;
 }
 
-#name {
-  font-size: 4rem;
-  margin: 2rem 0;
+.project-content .project-container {
+  margin: 1rem;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: none;
+  border-bottom-right-radius: 5%;
+}
+
+.project-card {
+  display: flex;
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+.project-card img {
+  height: 200px;
+  width: 200px;
+}
+
+.project-card .info {
+  /* border: 1px solid green; */
+  margin: 0 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info .heading {
+  /* border: 1px solid red; */
+  flex-grow: 1;
 
 }
 
-#title {
-  font-size: 2rem;
+.info .description {
+  border: 1px solid red;
+  flex-grow: 2;
+  display: flex;
+     align-items: center;
+     justify-content: center;
+     /* You can set flex-wrap and
+        flex-direction individually */
+     flex-direction: row;
+     flex-wrap: wrap;
+     /* Or do it all in one line
+       with flex flow */
+     flex-flow: row wrap;
+     /* tweak where items line
+        up on the row
+        valid values are: flex-start,
+        flex-end, space-between,
+        space-around, stretch */
+     align-content: flex-end
+
+}
+.info .description img {
+  height: 50px;
+  width: 50px;
+  flex-basis: 33%;
+  margin: 1rem 0;
+}
+
+.info .links {
+  /* border: 1px solid red; */
+  flex-grow: 1
 }
 
 #bio {
   text-align: justify;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 667px) {
+  .about-content .container {
+    width: 90%;
+  }
+
+  #bio {
+    font-size: 1.2rem;
+  }
+
+  .project-content .container {
+    border: 1px solid blue;
+    flex-flow: column;
+  }
+
+  .project-card {
+    width: 12rem;
+  }
 }
 
 /* FOOTER CONTENT */
