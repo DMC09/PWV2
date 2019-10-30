@@ -1,4 +1,4 @@
-@import "./reset.css";
+ @import "./reset.css";
 
 /* BACKGROUND */
 html, body {
@@ -97,7 +97,7 @@ a:hover {
 }
 
 /* MAIN CONTENT */
-.main-content, .about-content, .project-content {
+.main-content, .about-content, .project-content, .contact-content {
   height: 80%;
   display: flex;
   justify-content: center;
@@ -131,92 +131,140 @@ a:hover {
   color: #F4F9FF;
 }
 
-.project-content .container {
-  border: 1px solid black;
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: column;
-  align-items: flex-end;
-  color: #F4F9FF;
-  width: 90%;
+.bio {
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
-.project-content .project-container {
-  margin: 1rem;
-  display: inline-flex;
+.project-content .container {
+  display: flex;
   flex-flow: row;
-  justify-content: space-between;
-  width: 50%;
   align-items: center;
+  color: #F4F9FF;
+  width: 90%;
+  justify-content: center;
+}
+
+.project-content .project-card {
+  margin: .5rem;
+  display: flex;
+  width: 50%;
+  height: 33%;
   background: rgba(255, 255, 255, 0.15);
-  overflow: none;
   border-bottom-right-radius: 5%;
 }
 
-.project-card {
-  display: flex;
+.left-side {
+  flex-basis: 40%;
   margin: 1rem;
-  flex-grow: 1;
 }
 
-.project-card img {
-  height: 200px;
-  width: 200px;
+.left-side img {
+  height: 100%;
+  width: 100%;
 }
 
-.project-card .info {
+.right-side {
   /* border: 1px solid green; */
-  margin: 0 1rem;
-  flex-grow: 1;
+  flex-basis: 60%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   text-align: center;
+  margin: 1rem;
 }
 
-.info .heading {
+.right-side .heading {
   /* border: 1px solid red; */
-  flex-grow: 1;
-
-}
-
-.info .description {
-  border: 1px solid red;
-  flex-grow: 2;
-  display: flex;
-     align-items: center;
-     justify-content: center;
-     /* You can set flex-wrap and
-        flex-direction individually */
-     flex-direction: row;
-     flex-wrap: wrap;
-     /* Or do it all in one line
-       with flex flow */
-     flex-flow: row wrap;
-     /* tweak where items line
-        up on the row
-        valid values are: flex-start,
-        flex-end, space-between,
-        space-around, stretch */
-     align-content: flex-end
-
-}
-.info .description img {
-  height: 50px;
-  width: 50px;
-  flex-basis: 33%;
-  margin: 1rem 0;
-}
-
-.info .links {
-  /* border: 1px solid red; */
-  flex-grow: 1
-}
-
-#bio {
-  text-align: justify;
+  flex-basis: 20%;
   font-size: 1.5rem;
 }
+
+.right-side .description {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.right-side .stack-icons {
+  display: flex;
+  /* border: 1px solid red; */
+  flex-basis: 40%;
+  align-items: center;
+}
+
+.stack-icons img {
+  width: 33%;
+  height: 66%;
+}
+
+.right-side .links {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links button {
+  width: 45%;
+  border-radius: 5%;
+  border: none;
+  background: #D6A419;
+  opacity: .4;
+  transition: opacity .75s ease-in-out;
+  color:
+}
+
+.links button a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.links button:hover {
+  opacity: .8;
+}
+
+.contact-content .container {
+  border: 1px solid green;
+  width: 36.5%;
+
+}
+
+.form-container {
+height: 100%;
+background: rgba(255, 255, 255, 0.2);
+
+}
+
+.main-form {
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  align-content: center;
+  justify-content: space-around;
+}
+.hidden {
+  display: none;
+}
+input, textarea {
+  background: rgba(255, 255, 255, 0.2);;
+  border: none;
+  color: #F4F9FF;
+}
+
+label {
+  color: #F1F1E6;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 667px) {
   .about-content .container {
@@ -229,10 +277,14 @@ a:hover {
 
   .project-content .container {
     border: 1px solid blue;
-    flex-flow: column;
+    flex-flow: row;
   }
 
   .project-card {
+    flex-flow: column;
+  }
+
+  .left-side {
     width: 12rem;
   }
 }
