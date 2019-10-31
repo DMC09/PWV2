@@ -6,12 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/main.css">
+
   <title>Dharmin Chauhan</title>
 </head>
 
 <body>
   <nav>
-    <ul class="nav-menu">
+    <div id="hamburger" onclick="responsive()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="secret-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./project.html">Projects</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </div>
+    <ul id="nav" class="nav-menu">
       <li><a href="#">Home</a></li>
       <li><a href="./about.html">About</a></li>
       <li><a href="./project.html">Projects</a></li>
@@ -20,8 +32,8 @@
   </nav>
   <div class="main-content">
     <div class="container">
-      <span class="name" class="title">Dharmin Chauhan</span>
-      <span class="title"class="sub-title"> Web Developer</span>
+      <span id="name" class="name" class="title">Dharmin Chauhan</span>
+      <span class="title" class="sub-title"> Web Developer</span>
     </div>
   </div>
 
@@ -29,5 +41,27 @@
     <div>Copyright Information</div>
   </footer>
 </body>
+<script  src="main.js" charset="utf-8"></script>
+<script>
+function responsive() {
+  animation()
+  menuLoad();
+}
+
+function animation() {
+  burger.classList.toggle("change");
+  console.log("burger animation");
+
+}
+
+function menuLoad() {
+  if (burger.classList.contains ("change")) {
+    secretnav.style.visibility ='visible'
+ } else {
+   secretnav.style.visibility ='';
+ }
+}
+</script>
+
 
 </html>
