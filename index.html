@@ -18,10 +18,10 @@
       <div class="bar3"></div>
     </div>
     <div id="secret-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./project.html">Projects</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a class="slink" href="#">Home</a></li>
+      <li><a class="slink" href="./about.html">About</a></li>
+      <li><a class="slink"  href="./project.html">Projects</a></li>
+      <li><a class="slink" href="./contact.html">Contact</a></li>
     </div>
     <ul id="nav" class="nav-menu">
       <li><a href="#">Home</a></li>
@@ -41,26 +41,42 @@
     <div>Copyright Information</div>
   </footer>
 </body>
-<script  src="main.js" charset="utf-8"></script>
+<script src="main.js" charset="utf-8"></script>
 <script>
-function responsive() {
-  animation()
-  menuLoad();
-}
+  function responsive() {
 
-function animation() {
-  burger.classList.toggle("change");
-  console.log("burger animation");
+    animation()
+    menuLoad()
+    menuExpand()
+    linkClean()
+  }
 
-}
+  function animation() {
+    burger.classList.toggle("change");
 
-function menuLoad() {
-  if (burger.classList.contains ("change")) {
-    secretnav.style.visibility ='visible'
- } else {
-   secretnav.style.visibility ='';
- }
-}
+  }
+
+  function menuLoad() {
+    if (burger.classList.contains("change")) {
+      secretnav.style.visibility = 'visible'
+    } else {
+      secretnav.style.visibility = 'hidden';
+    }
+  }
+
+  function menuExpand() {
+    secretnav.classList.toggle("expand")
+    console.log(links);
+  }
+
+  function linkClean() {
+    if (secretnav.classList.contains("expand")) {
+      links.forEach(function(link) {
+        link.classList.toggle("link-show")
+      })
+
+    }
+  }
 </script>
 
 

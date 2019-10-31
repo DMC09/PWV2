@@ -1,10 +1,9 @@
 const burger = document.getElementById('hamburger')
 const nav = document.getElementById('nav')
 const secretnav = document.getElementById('secret-nav')
+const links = document.querySelectorAll('.slink')
 
-
-
-
+console.log(links);
 
 
 // media query event handler
