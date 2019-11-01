@@ -128,11 +128,12 @@
    transition: color .5s ease-in-out;
  }
 
+
  #secret-nav {
-   visibility: hidden;
+   display: none;
    z-index: 0;
    position: absolute;
-   display: flex;
+   text-align: center;
    flex-flow: column;
    width: 100%;
    justify-content: center;
@@ -142,17 +143,16 @@
    padding: 2.75rem 0 1rem 0;
  }
 
- #secret-nav a {
-   opacity: 0.8;
-   text-decoration: none;
-   color: white;
-   transition: all .5s ease-in-out;
+ .link-container {
+   opacity: 0;
  }
 
- .link-show {
-   opacity: .8;
-   color: green;
+ .link-container a {
+   color: #F4F9FF;
+   text-decoration: none;
  }
+
+ .link-show {}
 
  #secret-nav li:hover {
    color: #D6A419;

@@ -1,7 +1,7 @@
 const burger = document.getElementById('hamburger')
 const nav = document.getElementById('nav')
 const secretnav = document.getElementById('secret-nav')
-const links = document.querySelectorAll('.slink')
+const links = document.querySelector('.link-container')
 
 console.log(links);
 
@@ -27,4 +27,35 @@ function WidthChange(mq) {
 
   }
 
+}
+
+function responsive() {
+  animation()
+  menuLoad()
+  menuExpand()
+  linkClean()
+}
+
+function animation() {
+  burger.classList.toggle("change");
+
+}
+
+function menuLoad() {
+  if (burger.classList.contains("change")) {
+    secretnav.style.display = 'block'
+  } else {
+    secretnav.style.display = 'none';
+  }
+}
+
+function menuExpand() {
+  secretnav.classList.toggle("expand")
+  console.log(links);
+}
+
+function linkClean() {
+  if (secretnav.classList.contains("expand")) {
+    links.style.opacity = 0.8;
+  }
 }

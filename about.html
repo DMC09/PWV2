@@ -11,7 +11,27 @@
 
 <body>
   <nav>
-    <ul class="nav-menu">
+    <div id="hamburger" onclick="responsive()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="secret-nav">
+      <div class="link-container">
+        <li>
+          <ahref="#">Home</a>
+        </li>
+        <li>
+          <a href="./about.html">About </a> </li>
+        <li>
+          <a href="./project.html">Projects </a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact </a>
+        </li>
+      </div>
+    </div>
+    <ul id="nav" class="nav-menu">
       <li><a href="./index.html">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="./project.html">Projects</a></li>
@@ -31,5 +51,6 @@
     <div>Copyright © All rights reserved</div>
   </footer>
 </body>
+<script src="main.js" charset="utf-8"></script>
 
 </html>
