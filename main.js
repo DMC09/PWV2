@@ -3,7 +3,6 @@ const nav = document.getElementById('nav')
 const secretnav = document.getElementById('secret-nav')
 const links = document.querySelector('.link-container')
 
-console.log(links);
 
 
 // media query event handler
