@@ -6,12 +6,12 @@
  }
 
  html {
-   background: linear-gradient(270deg, #e5f0ff, #44619a, #003366);
+   background: linear-gradient(270deg, #50aaff, #44619a, #003366);
    background-size: 600% 600%;
-   -webkit-animation: ani 9s ease infinite;
-   -moz-animation: ani 9s ease infinite;
-   -o-animation: ani 9s ease infinite;
-   animation: ani 9s ease infinite;
+   -webkit-animation: ani 12s ease infinite;
+   -moz-animation: ani 12s ease infinite;
+   -o-animation: ani 12s ease infinite;
+   animation: ani 12s ease infinite;
  }
 
  @-webkit-keyframes ani {
@@ -248,13 +248,14 @@
    color: green;
    cursor: pointer;
  }
- #resume a {
 
+ #resume a {
    color: #F4F9FF;
    text-decoration: none;
  }
- #resume:hover{
-opacity: 0.8;
+
+ #resume:hover {
+   opacity: 0.8;
  }
 
  .project-content .container {
