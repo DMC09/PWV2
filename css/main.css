@@ -239,8 +239,8 @@
    text-decoration: none;
    width: 33%;
    text-align: center;
-   height: 2rem;
-   border-radius: 5%;
+   height: 2.5rem;
+   border-radius: 10px;
    border: none;
    background: #D6A419;
    opacity: .4;
@@ -273,7 +273,7 @@
    width: 50%;
    height: 33%;
    background: rgba(255, 255, 255, 0.15);
-   border-bottom-right-radius: 5%;
+   border-bottom-right-radius:10px;
  }
 
  .left-side {
@@ -331,12 +331,12 @@
 
  .links button {
    width: 45%;
-   border-radius: 5%;
+   border-radius: 10px;
    border: none;
    background: #D6A419;
    opacity: .4;
    transition: opacity .75s ease-in-out;
-   color:
+margin-bottom: -.5rem;
  }
 
  .links button a {
@@ -381,7 +381,7 @@
  .main-form button {
    height: 2rem;
    width: 75%;
-   border-radius: 5%;
+   border-radius: 10px;
    border: none;
    background: #D6A419;
    opacity: .4;
