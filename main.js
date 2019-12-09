@@ -30,31 +30,17 @@ function WidthChange(mq) {
 
 function responsive() {
   animation()
-  menuLoad()
-  menuExpand()
-  linkClean()
+  expand()
 }
 
 function animation() {
   burger.classList.toggle("change");
-
 }
 
-function menuLoad() {
+function expand() {
   if (burger.classList.contains("change")) {
-    secretnav.style.display = 'block'
+    secretnav.style.transform = "translateY(0%)"
   } else {
-    secretnav.style.display = 'none';
-  }
-}
-
-function menuExpand() {
-  secretnav.classList.toggle("expand")
-  console.log(links);
-}
-
-function linkClean() {
-  if (secretnav.classList.contains("expand")) {
-    links.style.opacity = 0.8;
+    secretnav.style.transform = ""
   }
 }

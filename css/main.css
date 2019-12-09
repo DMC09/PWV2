@@ -3,6 +3,7 @@
  /* BACKGROUND */
  html, body {
    height: 100%;
+   font-family: cursive;
  }
 
  html {
@@ -123,13 +124,12 @@
 
  .nav-menu a {
    text-decoration: none;
-   font-size: 1.25rem;
+   font-size: 1.5rem;
    color: #F1F1E6;
    transition: color .5s ease-in-out;
  }
 
  #secret-nav {
-   display: none;
    z-index: 0;
    position: absolute;
    text-align: center;
@@ -140,16 +140,14 @@
    transition: all 1s ease-in-out;
    list-style: none;
    padding: 3rem 0 1rem 0;
- }
-
- .link-container {
-   opacity: 0;
+   background: rgba(255, 255, 255, 0.8);
+   transform: translateY(-100%);
  }
 
  .link-container a {
    color: #333;
    text-decoration: none;
-   font-size: 1.2rem;
+   font-size: 1.5rem;
  }
 
  .link-show {}
@@ -159,7 +157,7 @@
  }
 
  .expand {
-   background: rgba(255, 255, 255, 0.8);
+   transform: translateY(0%);
  }
 
  a:hover {
@@ -217,6 +215,7 @@
 
  .title {
    font-size: 2rem;
+   color: #D6A419;
  }
 
  .about-content .container {
@@ -273,7 +272,7 @@
    width: 50%;
    height: 33%;
    background: rgba(255, 255, 255, 0.15);
-   border-bottom-right-radius:10px;
+   border-bottom-right-radius: 10px;
  }
 
  .left-side {
@@ -336,7 +335,7 @@
    background: #D6A419;
    opacity: .4;
    transition: opacity .75s ease-in-out;
-margin-bottom: -.5rem;
+   margin-bottom: -.5rem;
  }
 
  .links button a {
@@ -403,13 +402,13 @@ margin-bottom: -.5rem;
    background: rgba(255, 255, 255, 0.2);
    border: none;
    color: #F4F9FF;
-   font-size: 1.5rem;
+   font-size: 1.25rem;
    border-radius: 3%;
  }
 
  label {
    color: #333;
-   font-size: 1.25rem;
+   font-size: 1.5rem;
  }
 
  @media only screen and (max-width: 667px) {
