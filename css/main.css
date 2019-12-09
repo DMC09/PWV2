@@ -3,7 +3,7 @@
  /* BACKGROUND */
  html, body {
    height: 100%;
-   font-family: cursive;
+   font-family: verdana;
  }
 
  html {
@@ -366,18 +366,17 @@
 
  .main-form {
    height: 100%;
-   width: 50%;
+   width: 65%;
    display: flex;
    text-align: center;
    flex-flow: column;
    align-content: center;
    justify-content: space-around;
-   /* border: 1px solid blue; */
  }
 
  .main-form button {
    height: 2rem;
-   width: 75%;
+   width: 100%;
    border-radius: 10px;
    border: none;
    background: #D6A419;
@@ -401,7 +400,7 @@
    border: none;
    color: #F4F9FF;
    font-size: 1.25rem;
-   border-radius: 3%;
+   border-radius: 10px;
  }
 
  label {
