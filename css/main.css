@@ -425,6 +425,10 @@
      font-size: 1rem;
    }
 
+   .project-content {
+     height: initial;
+   }
+
    .project-content .container {
      flex-flow: column;
    }
