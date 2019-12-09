@@ -264,6 +264,7 @@
    color: #F4F9FF;
    width: 90%;
    justify-content: center;
+   flex-wrap: wrap;
  }
 
  .project-content .project-card {
@@ -273,6 +274,7 @@
    height: 33%;
    background: rgba(255, 255, 255, 0.15);
    border-bottom-right-radius: 10px;
+   flex-basis: 33%;
  }
 
  .left-side {
@@ -286,7 +288,6 @@
  }
 
  .right-side {
-   /* border: 1px solid green; */
    flex-basis: 60%;
    display: flex;
    flex-flow: column;
@@ -296,13 +297,11 @@
  }
 
  .right-side .heading {
-   /* border: 1px solid red; */
    flex-basis: 20%;
    font-size: 1.5rem;
  }
 
  .right-side .description {
-   /* border: 1px solid red; */
    display: flex;
    justify-content: center;
    flex-basis: 20%;
@@ -312,7 +311,6 @@
 
  .right-side .stack-icons {
    display: flex;
-   /* border: 1px solid red; */
    flex-basis: 40%;
    align-items: center;
  }
