@@ -259,12 +259,8 @@
 
  .project-content .container {
    display: flex;
-   flex-flow: row;
    align-items: center;
-   color: #F4F9FF;
-   width: 90%;
-   justify-content: center;
-   flex-wrap: wrap;
+   flex-flow: column;
  }
 
  .project-content .project-card {
