@@ -354,7 +354,6 @@
  .form-container {
    height: 100%;
    background: rgba(255, 255, 255, 0.2);
-   border-radius: 3%;
    /* border: 1px solid red; */
    width: 65%;
    display: flex;
@@ -374,7 +373,6 @@
  .main-form button {
    height: 2rem;
    width: 100%;
-   border-radius: 10px;
    border: none;
    background: #FFCA38;
    opacity: .8;
@@ -397,7 +395,6 @@
    border: none;
    color: #F4F9FF;
    font-size: 1.25rem;
-   border-radius: 10px;
  }
 
  label {
