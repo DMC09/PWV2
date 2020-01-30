@@ -397,6 +397,10 @@
    font-size: 1.25rem;
  }
 
+ .captcha {
+   text-align: center;
+ }
+
  label {
    color: #333;
    font-size: 1.5rem;
