@@ -270,7 +270,6 @@
    width: 50%;
    height: 33%;
    background: rgba(255, 255, 255, 0.15);
-   border-bottom-right-radius: 10px;
    flex-basis: 33%;
  }
 
@@ -291,6 +290,7 @@
    justify-content: center;
    text-align: center;
    margin: 1rem;
+   padding-bottom: .5rem;
  }
 
  .right-side .heading {
@@ -325,12 +325,12 @@
 
  .links button {
    width: 45%;
-   border-radius: 10px;
    border: none;
    background: #FFCA38;
    opacity: .7;
    transition: opacity .25s ease-in-out;
    margin-bottom: -.5rem;
+   padding-bottom: .5rem;
  }
 
  .links button a {
