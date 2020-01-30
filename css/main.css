@@ -329,7 +329,7 @@
    border: none;
    background: #D6A419;
    opacity: .4;
-   transition: opacity .75s ease-in-out;
+   transition: opacity .25s ease-in-out;
    margin-bottom: -.5rem;
  }
 
@@ -378,7 +378,7 @@
    border: none;
    background: #D6A419;
    opacity: .4;
-   transition: opacity .75s ease-in-out;
+   transition: opacity .25s ease-in-out;
    color: #F4F9FF;
    cursor: pointer;
    margin: .5rem 0;
