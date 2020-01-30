@@ -129,7 +129,18 @@
   </div>
 
   <footer>
-    <div>Copyright © All rights reserved</div>
+    <div class="footer-content">
+      Copyright
+      &copy;
+      &nbsp;
+      <span id="copyright">
+        <script>
+          document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+        </script>
+        &nbsp;
+      </span>
+      All rights reserved
+    </div>
   </footer>
 </body>
 <script src="main.js" charset="utf-8"></script>
