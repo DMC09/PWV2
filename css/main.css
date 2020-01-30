@@ -327,8 +327,8 @@
    width: 45%;
    border-radius: 10px;
    border: none;
-   background: #D6A419;
-   opacity: .4;
+   background: #FFCA38;
+   opacity: .7;
    transition: opacity .25s ease-in-out;
    margin-bottom: -.5rem;
  }
@@ -340,7 +340,7 @@
  }
 
  .links button:hover {
-   opacity: .8;
+   opacity: 1;
  }
 
  .contact-content .container {
@@ -376,16 +376,16 @@
    width: 100%;
    border-radius: 10px;
    border: none;
-   background: #D6A419;
-   opacity: .4;
-   transition: opacity .25s ease-in-out;
+   background: #FFCA38;
+   opacity: .8;
+   transition: all .25s ease-in-out;
    color: #F4F9FF;
    cursor: pointer;
    margin: .5rem 0;
  }
 
  .main-form button:hover {
-   opacity: .8;
+   opacity: 1;
  }
 
  .hidden {
