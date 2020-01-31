@@ -417,6 +417,7 @@
 
    .about-content .container {
      width: 90%;
+     line-height: 2.5;
    }
 
    .bio {
