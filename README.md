@@ -1,9 +1,9 @@
 # PWV2
-Personal Portfolio Website.
+Personal Portfolio Website Version 2. [OUTDATED]
 
 
 
-[Live](https://dharminchauhan.com)
+
 
 Build entirely with HTML, CSS and Js
 
